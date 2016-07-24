@@ -1,0 +1,34 @@
+/* Empty. Add your own CSS if you like */
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+#map-canvas {
+  height: 100%;
+  width: 100%;
+}
+.scroll {
+  height: 100%;
+}
+.header .col {
+    background-color:lightgrey;
+}
+
+.col {
+    border: solid 1px grey;
+    border-bottom-style: none;
+    border-right-style: none;
+}
+
+.col:last-child {
+    border-right: solid 1px grey;
+}
+
+.row:last-child .col {
+    border-bottom: solid 1px grey;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}

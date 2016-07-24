@@ -1,0 +1,21 @@
+<ion-modal-view>
+	<ion-header-bar bar="bar-assertive">
+		<h1 class="title">Notification</h1>
+		<div class="buttons">
+			<button class="button-clear" ng-click="closeNotif()">
+				<i class="button button-icon ion-ios-arrow-down"></i>
+			
+			</button>
+		</div>
+	</ion-header-bar>/
+	<ion-content>
+		<div class="list">
+			<ion-radio ng-model="int.time" ng-click="notify()" ng-value="10">10 minutes before</ion-radio>
+			<ion-radio ng-model="int.time" ng-click="notify()" ng-value="20">20 minutes before</ion-radio>
+			<ion-radio ng-model="int.time" ng-click="notify()" ng-value="30">30 minutes before</ion-radio>
+			<ion-radio ng-model="int.time" ng-click="notify()" ng-value="60">1 hour before</ion-radio>
+			<ion-radio ng-model="int.time" ng-click="notify()" ng-value="120">2 hours before</ion-radio>
+			<button ng-disabled="!int.time" ng-click="submitAnswer(int)">Submit</button>
+   		</div>
+	</ion-content>
+</ion-modal-view>
